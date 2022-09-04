@@ -1,0 +1,19 @@
+syntax ="proto3";
+
+package pb;
+
+option go_package = "user/pb";
+
+
+message RequestUser {
+    string email = 1;
+    string password =2;
+}
+
+message ResponseUser {
+    string status =1;
+}
+
+service UserRegister {
+    rpc Register(RequestUser) returns (ResponseUser) {};
+}
