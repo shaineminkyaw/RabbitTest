@@ -1,8 +1,9 @@
-package grpc
+package rpc
 
 import (
 	"context"
-	"user/pb"
+
+	"github.com/shaineminkyaw/RabbitTest/pb"
 
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

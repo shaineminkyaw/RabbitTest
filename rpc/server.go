@@ -1,9 +1,10 @@
-package grpc
+package rpc
 
 import (
 	"log"
 	"net"
-	"user/pb"
+
+	"github.com/shaineminkyaw/RabbitTest/pb"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
